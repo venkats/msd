@@ -58,10 +58,10 @@ public class Wordle {
 
     var won = tallyResult.stream().allMatch(match -> match.equals(EXACT));
 
-    var message = won ? "Amazing" : "";
+    var message = won ? List.of("Amazing", "Splendid").get(numberOfAttempts) : "";
 
     var status = won ? WON : INPROGRESS;
 
-    return new Response(1, status, tallyResult, message);
+    return new Response(numberOfAttempts + 1, status, tallyResult, message);
   }
 }

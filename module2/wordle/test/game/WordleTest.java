@@ -84,4 +84,13 @@ public class WordleTest {
       new Response(1, INPROGRESS, List.of(NO, NO, EXACT, NO, EXACT), ""),
       response);
   }
+
+  @Test
+  void playSecondAttemptWithWinningGuess(){
+    var response = play("FAVOR", "FAVOR", 1);
+
+    assertEquals(
+      new Response(2, WON, List.of(EXACT, EXACT, EXACT, EXACT, EXACT), "Splendid"),
+      response);
+  }
 }
