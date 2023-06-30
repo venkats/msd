@@ -5,3 +5,17 @@
 ✔tally for target FOR guess FAVOR
 ✔tally for target FAVOR guess FOR
 
+✔tally for target FAVOR guess RAPID
+✔tally for target FAVOR guess MAYOR
+
+✔tally for target FAVOR guess RIVER
+✔tally for target FAVOR guess AMAST
+
+✔tally for target SKILL guess SKILL
+✔tally for target SKILL guess SWIRL
+✔tally for target SKILL guess CIVIL
+✔tally for target SKILL guess SHIMS
+✔tally for target SKILL guess SILLY
+✔tally for target SKILL guess SLICE
+
+
