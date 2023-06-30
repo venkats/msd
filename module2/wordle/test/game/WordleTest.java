@@ -130,4 +130,12 @@ public class WordleTest {
       response);
   }
 
+  @Test
+  void playFourthAttemptWithNonWinningGuess(){
+    var response = play("FAVOR", "RIVER", 3);
+
+    assertEquals(
+      new Response(4, INPROGRESS, List.of(NO, NO, EXACT, NO, EXACT), ""),
+      response);
+  }
 }
