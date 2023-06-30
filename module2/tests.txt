@@ -18,4 +18,19 @@
 ✔tally for target SKILL guess SILLY
 ✔tally for target SKILL guess SLICE
 
+✔play first attempt with winning guess
+-play deal with invalid guess on first attempt
+-play first attempt with non-winning guess
+-play second attempt with winning guess
+-play second attempt with non-winning guess
+-play third attempt with winning guess
+-play third attempt with non-winning guess
+-play fourth attempt with winning guess
+-play fourth attempt with non-winning guess
+-play fifth attempt with winning guess
+-play fifth attempt with non-winning guess
+-play sixth attempt with winning guess
+-play sixth attempt with non-winning guess
+-play seventh attempt with winning guess
+-play eight attempt with non-winning guess
 

@@ -4,8 +4,10 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 import static game.Match.*;
+import static game.Status.*;
 
 enum Match { EXACT, NO, EXISTS }
+enum Status { WON };
 
 public class Wordle {
   private static final int WORD_SIZE = 5;
@@ -51,4 +53,7 @@ public class Wordle {
     return NO;
   }
 
+  public static Response play(String target, String guess, int numberOfAttempts) {
+    return new Response(1, WON, tally(target, guess), "Amazing");
+  }
 }

@@ -3,8 +3,9 @@ package game;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-import static game.Wordle.tally;
+import static game.Wordle.*;
 import static game.Match.*;
+import static game.Status.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class WordleTest {
@@ -58,4 +59,14 @@ public class WordleTest {
       () -> assertEquals(List.of(EXISTS, NO, EXISTS, EXISTS, NO), tally("SAGAS", "ABASE"))
     );
   }
+
+  @Test
+  void playFirstAttemptWithWinningGuess(){
+    var response = play("FAVOR", "FAVOR", 0);
+
+    assertEquals(
+      new Response(1, WON, List.of(EXACT, EXACT, EXACT, EXACT, EXACT), "Amazing"),
+      response);
+  }
+
 }
