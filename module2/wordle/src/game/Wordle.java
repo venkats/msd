@@ -7,7 +7,7 @@ import static game.Match.*;
 import static game.Status.*;
 
 enum Match { EXACT, NO, EXISTS }
-enum Status { WON };
+enum Status { WON, INPROGRESS };
 
 public class Wordle {
   private static final int WORD_SIZE = 5;
@@ -54,6 +54,14 @@ public class Wordle {
   }
 
   public static Response play(String target, String guess, int numberOfAttempts) {
-    return new Response(1, WON, tally(target, guess), "Amazing");
+    var tallyResult = tally(target, guess);
+
+    var won = tallyResult.stream().allMatch(match -> match.equals(EXACT));
+
+    var message = won ? "Amazing" : "";
+
+    var status = won ? WON : INPROGRESS;
+
+    return new Response(1, status, tallyResult, message);
   }
 }

@@ -75,4 +75,13 @@ public class WordleTest {
 
     assertEquals("Guess length should be 5", ex.getMessage());
   }
+
+  @Test
+  void playFirstAttemptWithNonWinningGuess(){
+    var response = play("FAVOR", "RIVER", 0);
+
+    assertEquals(
+      new Response(1, INPROGRESS, List.of(NO, NO, EXACT, NO, EXACT), ""),
+      response);
+  }
 }
