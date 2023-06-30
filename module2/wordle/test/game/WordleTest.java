@@ -1,5 +1,6 @@
 package game;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -7,8 +8,21 @@ import static game.Wordle.*;
 import static game.Match.*;
 import static game.Status.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.*;
 
 public class WordleTest {
+  private SpellChecker spellChecker;
+
+  @BeforeEach
+  void init() {
+    spellChecker = mock(SpellChecker.class);
+
+    when(spellChecker.isSpellingCorrect(anyString())).thenReturn(true);
+
+    Wordle.setSpellCheckerService(spellChecker);
+  }
+
   @Test
   void canary(){
     assertTrue(true);
@@ -192,6 +206,13 @@ public class WordleTest {
   }
 
   @Test
-  void playFirstAttempWithCorrectSpellingForGuess(){
+  void playFirstAttemptWithCorrectSpellingForGuess(){
+    var response = play("FAVOR", "RIVER", 0);
+
+    assertEquals(
+      new Response(1, INPROGRESS, List.of(NO, NO, EXACT, NO, EXACT), ""),
+      response);
+
+    verify(spellChecker, times(1)).isSpellingCorrect("RIVER");
   }
 }

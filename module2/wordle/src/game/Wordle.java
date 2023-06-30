@@ -12,6 +12,11 @@ enum Status { WON, INPROGRESS, LOST };
 public class Wordle {
   private static final int WORD_SIZE = 5;
   private static final int MAX_ATTEMPTS = 6;
+  private static SpellChecker spellChecker;
+
+  public static void setSpellCheckerService(SpellChecker aSpellChecker) {
+    spellChecker = aSpellChecker;
+  }
 
   public static List<Match> tally(String target, String guess) {
     if(target.length() != WORD_SIZE) {
@@ -55,6 +60,8 @@ public class Wordle {
   }
 
   public static Response play(String target, String guess, int numberOfAttempts) {
+    spellChecker.isSpellingCorrect(guess);
+
     if(numberOfAttempts >= MAX_ATTEMPTS) {
       throw new RuntimeException("Game Over");  
     }
