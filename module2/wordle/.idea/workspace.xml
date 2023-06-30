@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="275c1654-ac5a-498c-a5b0-3b3ba2fc7ec7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wordle.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/game/WordleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/game/WordleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wordle.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,14 +29,19 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.WordleTest">
     <configuration name="WordleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wordle" />
       <extension name="coverage">
@@ -49,9 +57,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WordleTest.playFirstAttemptWithCorrectSpellingForGuess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wordle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.WordleTest" />
+      <option name="METHOD_NAME" value="playFirstAttemptWithCorrectSpellingForGuess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.WordleTest" />
+        <item itemvalue="JUnit.WordleTest.playFirstAttemptWithCorrectSpellingForGuess" />
       </list>
     </recent_temporary>
   </component>
@@ -65,6 +90,7 @@
       <updated>1688158188453</updated>
       <workItem from="1688158189805" duration="83000" />
       <workItem from="1688158282029" duration="52000" />
+      <workItem from="1688158387478" duration="1661000" />
     </task>
     <servers />
   </component>
