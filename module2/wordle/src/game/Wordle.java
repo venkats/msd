@@ -7,7 +7,7 @@ import static game.Match.*;
 import static game.Status.*;
 
 enum Match { EXACT, NO, EXISTS }
-enum Status { WON, INPROGRESS };
+enum Status { WON, INPROGRESS, LOST };
 
 public class Wordle {
   private static final int WORD_SIZE = 5;
@@ -60,7 +60,7 @@ public class Wordle {
 
     var message = won ? List.of("Amazing", "Splendid", "Awesome", "Yay", "Yay", "Yay").get(numberOfAttempts) : "";
 
-    var status = won ? WON : INPROGRESS;
+    var status = won ? WON : numberOfAttempts == 5 ? LOST : INPROGRESS;
 
     return new Response(numberOfAttempts + 1, status, tallyResult, message);
   }

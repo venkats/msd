@@ -171,7 +171,7 @@ public class WordleTest {
     var response = play("FAVOR", "RIVER", 5);
 
     assertEquals(
-      new Response(6, INPROGRESS, List.of(NO, NO, EXACT, NO, EXACT), ""),
+      new Response(6, LOST, List.of(NO, NO, EXACT, NO, EXACT), ""),
       response);
   }
 }
