@@ -176,9 +176,17 @@ public class WordleTest {
   }
 
   @Test
-  void playSeventhAttemptWithNonWinningGuess(){
+  void playSeventhAttemptWithWinningGuess(){
     var ex = assertThrows(RuntimeException.class,
       () -> play("FAVOR", "FAVOR", 6));
+
+    assertEquals("Game Over", ex.getMessage());
+  }
+
+  @Test
+  void playEightAttemptWithNonWinningGuess(){
+    var ex = assertThrows(RuntimeException.class,
+      () -> play("FAVOR", "RAPID", 7));
 
     assertEquals("Game Over", ex.getMessage());
   }
