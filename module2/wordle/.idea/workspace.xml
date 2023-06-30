@@ -6,18 +6,26 @@
   <component name="ChangeListManager">
     <list default="true" id="275c1654-ac5a-498c-a5b0-3b3ba2fc7ec7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/game/WordleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/game/WordleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wordle.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="2RwPUkPYqIece3s09bgJy4yTKZ8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,7 +49,43 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.WordleTest">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="game" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AgileDeveloperSpellCheckerTest">
+    <configuration name="AgileDeveloperSpellCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wordle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.AgileDeveloperSpellCheckerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgileDeveloperSpellCheckerTest.isSpellingorrectForIncorrectSpelling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wordle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="game" />
+      <option name="MAIN_CLASS_NAME" value="game.AgileDeveloperSpellCheckerTest" />
+      <option name="METHOD_NAME" value="isSpellingorrectForIncorrectSpelling" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wordle" />
       <extension name="coverage">
@@ -75,6 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AgileDeveloperSpellCheckerTest" />
+        <item itemvalue="JUnit.AgileDeveloperSpellCheckerTest.isSpellingorrectForIncorrectSpelling" />
         <item itemvalue="JUnit.WordleTest" />
         <item itemvalue="JUnit.WordleTest.playFirstAttemptWithCorrectSpellingForGuess" />
       </list>
@@ -90,7 +136,7 @@
       <updated>1688158188453</updated>
       <workItem from="1688158189805" duration="83000" />
       <workItem from="1688158282029" duration="52000" />
-      <workItem from="1688158387478" duration="1661000" />
+      <workItem from="1688158387478" duration="2563000" />
     </task>
     <servers />
   </component>
