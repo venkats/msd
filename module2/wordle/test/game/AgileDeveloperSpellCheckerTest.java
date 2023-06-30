@@ -22,7 +22,7 @@ public class AgileDeveloperSpellCheckerTest {
   }
 
   @Test
-  void isSpellingorrectForCorrectSpelling() throws IOException {
+  void isSpellingCorrectForCorrectSpelling() throws IOException {
     assertTrue(agileDeveloperSpellChecker.isSpellingCorrect("good"));
 
     verify(agileDeveloperSpellChecker, times(1)).getResponse("good");
