@@ -11,6 +11,7 @@ enum Status { WON, INPROGRESS, LOST };
 
 public class Wordle {
   private static final int WORD_SIZE = 5;
+  private static final int MAX_ATTEMPTS = 6;
 
   public static List<Match> tally(String target, String guess) {
     if(target.length() != WORD_SIZE) {
@@ -54,6 +55,10 @@ public class Wordle {
   }
 
   public static Response play(String target, String guess, int numberOfAttempts) {
+    if(numberOfAttempts >= MAX_ATTEMPTS) {
+      throw new RuntimeException("Game Over");  
+    }
+    
     var tallyResult = tally(target, guess);
 
     var won = tallyResult.stream().allMatch(match -> match.equals(EXACT));

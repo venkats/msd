@@ -174,4 +174,12 @@ public class WordleTest {
       new Response(6, LOST, List.of(NO, NO, EXACT, NO, EXACT), ""),
       response);
   }
+
+  @Test
+  void playSeventhAttemptWithNonWinningGuess(){
+    var ex = assertThrows(RuntimeException.class,
+      () -> play("FAVOR", "FAVOR", 6));
+
+    assertEquals("Game Over", ex.getMessage());
+  }
 }

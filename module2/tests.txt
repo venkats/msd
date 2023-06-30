@@ -31,6 +31,6 @@
 ✔play fifth attempt with non-winning guess
 ✔play sixth attempt with winning guess
 ✔play sixth attempt with non-winning guess
--play seventh attempt with winning guess
+✔play seventh attempt with winning guess
 -play eight attempt with non-winning guess
 
