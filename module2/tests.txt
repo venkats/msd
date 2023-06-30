@@ -32,5 +32,10 @@
 ✔play sixth attempt with winning guess
 ✔play sixth attempt with non-winning guess
 ✔play seventh attempt with winning guess
--play eight attempt with non-winning guess
+✔play eight attempt with non-winning guess
+
+-play first attempt with a correct spelling
+-play first attempt with an incorrect spelling
+-play second attempt with an incorrect spelling
+-play second attempt with a failure of the spellcheck service
 

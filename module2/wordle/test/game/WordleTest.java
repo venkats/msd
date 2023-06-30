@@ -190,4 +190,8 @@ public class WordleTest {
 
     assertEquals("Game Over", ex.getMessage());
   }
+
+  @Test
+  void playFirstAttempWithCorrectSpellingForGuess(){
+  }
 }
