@@ -40,4 +40,22 @@ public class WordleTest {
 
     assertEquals("Guess length should be 5", ex.getMessage());
   }
+
+  @Test
+  void testsForTally(){
+    assertAll(
+      () -> assertEquals(List.of(EXISTS, EXACT, NO, NO, NO), tally("FAVOR", "RAPID")),
+
+      () -> assertEquals(List.of(NO, EXACT, NO, EXACT, EXACT), tally("FAVOR", "MAYOR")),
+      () -> assertEquals(List.of(NO, NO, EXACT, NO, EXACT), tally("FAVOR", "RIVER")),
+      () -> assertEquals(List.of(EXISTS, NO, NO, NO, NO), tally("FAVOR", "AMAST")),
+      () -> assertEquals(List.of(EXACT, EXACT, EXACT, EXACT, EXACT), tally("SKILL", "SKILL")),
+      () -> assertEquals(List.of(EXACT, NO, EXACT, NO, EXACT), tally("SKILL", "SWIRL")),
+      () -> assertEquals(List.of(NO, EXISTS, NO, NO, EXACT), tally("SKILL", "CIVIL")),
+      () -> assertEquals(List.of(EXACT, NO, EXACT, NO, NO), tally("SKILL", "SHIMS")),
+      () -> assertEquals(List.of(EXACT, EXISTS, EXISTS, EXACT, NO), tally("SKILL", "SILLY")),
+      () -> assertEquals(List.of(EXACT, EXISTS, EXACT, NO, NO), tally("SKILL", "SLICE")),
+      () -> assertEquals(List.of(EXISTS, NO, EXISTS, EXISTS, NO), tally("SAGAS", "ABASE"))
+    );
+  }
 }
