@@ -7,7 +7,7 @@ import static game.Match.*;
 import static game.Status.*;
 
 enum Match { EXACT, NO, EXISTS }
-enum Status { WON, INPROGRESS, LOST };
+enum Status { WON, INPROGRESS, LOST, WRONGSPELLING };
 
 public class Wordle {
   private static final int WORD_SIZE = 5;
@@ -60,7 +60,9 @@ public class Wordle {
   }
 
   public static Response play(String target, String guess, int numberOfAttempts) {
-    spellChecker.isSpellingCorrect(guess);
+    if(!spellChecker.isSpellingCorrect(guess)) {
+      return new Response(numberOfAttempts, WRONGSPELLING, List.of(NO, NO, NO, NO, NO), "Incorrect spelling");
+    }
 
     if(numberOfAttempts >= MAX_ATTEMPTS) {
       throw new RuntimeException("Game Over");  

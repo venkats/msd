@@ -215,4 +215,17 @@ public class WordleTest {
 
     verify(spellChecker, times(1)).isSpellingCorrect("RIVER");
   }
+
+  @Test
+  void playFirstAttemptWithIncorrectSpellingForGuess(){
+    when(spellChecker.isSpellingCorrect("RIVER")).thenReturn(false);
+
+    var response = play("FAVOR", "RIVER", 0);
+
+    assertEquals(
+      new Response(0, WRONGSPELLING, List.of(NO, NO, NO, NO, NO), "Incorrect spelling"),
+      response);
+
+    verify(spellChecker, times(1)).isSpellingCorrect("RIVER");
+  }
 }
