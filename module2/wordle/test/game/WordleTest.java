@@ -69,4 +69,10 @@ public class WordleTest {
       response);
   }
 
+  @Test
+  void playFirstAttemptInvalidGuess(){
+    var ex = assertThrows(RuntimeException.class, () -> play("FAVOR", "FOR", 1));
+
+    assertEquals("Guess length should be 5", ex.getMessage());
+  }
 }

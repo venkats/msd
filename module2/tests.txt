@@ -19,7 +19,7 @@
 ✔tally for target SKILL guess SLICE
 
 ✔play first attempt with winning guess
--play deal with invalid guess on first attempt
+✔play deal with invalid guess on first attempt
 -play first attempt with non-winning guess
 -play second attempt with winning guess
 -play second attempt with non-winning guess
