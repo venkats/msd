@@ -165,4 +165,13 @@ public class WordleTest {
       new Response(6, WON, List.of(EXACT, EXACT, EXACT, EXACT, EXACT), "Yay"),
       response);
   }
+
+  @Test
+  void playSixthAttemptWithNonWinningGuess(){
+    var response = play("FAVOR", "RIVER", 5);
+
+    assertEquals(
+      new Response(6, INPROGRESS, List.of(NO, NO, EXACT, NO, EXACT), ""),
+      response);
+  }
 }
