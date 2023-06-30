@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="275c1654-ac5a-498c-a5b0-3b3ba2fc7ec7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/game/AgileDeveloperSpellCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/game/AgileDeveloperSpellCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Wordle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Wordle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +55,7 @@
       <recent name="game" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AgileDeveloperSpellCheckerTest">
+  <component name="RunManager" selected="JUnit.WordleTest">
     <configuration name="AgileDeveloperSpellCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="wordle" />
       <extension name="coverage">
@@ -120,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordleTest" />
         <item itemvalue="JUnit.AgileDeveloperSpellCheckerTest" />
         <item itemvalue="JUnit.AgileDeveloperSpellCheckerTest.isSpellingorrectForIncorrectSpelling" />
-        <item itemvalue="JUnit.WordleTest" />
         <item itemvalue="JUnit.WordleTest.playFirstAttemptWithCorrectSpellingForGuess" />
       </list>
     </recent_temporary>
@@ -137,7 +137,7 @@
       <updated>1688158188453</updated>
       <workItem from="1688158189805" duration="83000" />
       <workItem from="1688158282029" duration="52000" />
-      <workItem from="1688158387478" duration="2938000" />
+      <workItem from="1688158387478" duration="4102000" />
     </task>
     <servers />
   </component>

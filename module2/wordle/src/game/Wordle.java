@@ -19,17 +19,29 @@ public class Wordle {
   }
 
   public static List<Match> tally(String target, String guess) {
-    if(target.length() != WORD_SIZE) {
-      throw new RuntimeException("Target length should be " + WORD_SIZE);
-    }
+    checkTargetWordLength(target);
 
-    if(guess.length() != WORD_SIZE) {
-      throw new RuntimeException("Guess length should be " + WORD_SIZE);
-    }
+    checkGuessWordLength(guess);
 
+    return composeTallyAtEachPosition(target, guess);
+  }
+
+  private static List<Match> composeTallyAtEachPosition(String target, String guess) {
     return IntStream.range(0, WORD_SIZE)
       .mapToObj(index -> tallyAtPosition(target, guess, index))
       .toList();
+  }
+
+  private static void checkGuessWordLength(String guess) {
+    if(guess.length() != WORD_SIZE) {
+      throw new RuntimeException("Guess length should be " + WORD_SIZE);
+    }
+  }
+
+  private static void checkTargetWordLength(String target) {
+    if(target.length() != WORD_SIZE) {
+      throw new RuntimeException("Target length should be " + WORD_SIZE);
+    }
   }
 
   private static Match tallyAtPosition(String target, String guess, int index) {
