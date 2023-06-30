@@ -5,7 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.util.Scanner;
 
-public class AgileDeveloperSpellChecker {
+public class AgileDeveloperSpellChecker implements SpellChecker {
   public String getResponse(String word) throws IOException {
     var url = "http://agiledeveloper.com/spellcheck?check=" + word;
 
