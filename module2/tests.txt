@@ -39,8 +39,8 @@
 ✔play second attempt with an incorrect spelling
 ✔play second attempt with a failure of the spellcheck service
 
--get response from the service for a word
--isSpellingCorrect for a word with correct spelling
--isSpellingCorrect for a word with incorrect spelling
--isSpellingCorrect for a word with network failure
+✔get response from the service for a word
+✔isSpellingCorrect for a word with correct spelling
+✔isSpellingCorrect for a word with incorrect spelling
+✔isSpellingCorrect for a word with network failure
 
