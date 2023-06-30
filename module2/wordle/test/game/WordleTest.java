@@ -241,4 +241,16 @@ public class WordleTest {
 
     verify(spellChecker, times(1)).isSpellingCorrect("RIVER");
   }
+
+  @Test
+  void playSecondAttemptWithFailureToCheckSpelling(){
+    when(spellChecker.isSpellingCorrect("RIVER")).thenThrow(new RuntimeException("Network failure"));
+
+    var ex =
+      assertThrows(RuntimeException.class, () -> play("FAVOR", "RIVER", 1));
+
+    assertEquals("Network failure", ex.getMessage());
+
+    verify(spellChecker, times(1)).isSpellingCorrect("RIVER");
+  }
 }
