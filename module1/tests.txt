@@ -2,8 +2,8 @@
 
 ✔tally for target FAVOR guess FAVOR
 ✔tally for target FAVOR guess TESTS
--tally for target FOR guess FAVOR
--tally for target FAVOR guess FOR
+✔tally for target FOR guess FAVOR
+✔tally for target FAVOR guess FOR
 -
 -
 -

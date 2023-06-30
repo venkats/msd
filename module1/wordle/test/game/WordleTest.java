@@ -31,6 +31,13 @@ public class WordleTest {
   void tallyForTargetFORAndGuessFAVOR(){
     var ex = assertThrows(RuntimeException.class, () -> tally("FOR", "FAVOR"));
 
-    assertEquals("Target size should be 5", ex.getMessage());
+    assertEquals("Target length should be 5", ex.getMessage());
+  }
+
+  @Test
+  void tallyForTargetFAVORAndGuessFOR(){
+    var ex = assertThrows(RuntimeException.class, () -> tally("FAVOR", "FOR"));
+
+    assertEquals("Guess length should be 5", ex.getMessage());
   }
 }
